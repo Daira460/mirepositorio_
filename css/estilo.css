@@ -244,7 +244,9 @@ footer {
       "carousel carousel carousel"
   }
   .header { grid-area: header;
-margin: 20px;}
+margin: 20px;
+justify-content: center;
+display: inline-block;}
   
   
 .main { grid-area: main;
@@ -275,19 +277,30 @@ margin: 20px;}
           "carousel"
       }
     
-    article {
+     article {
    background-color: white;
    width: 400px;
-   border: 1px solid white;
+   color: black;
 
  }
+.main{
+    border: 1px solid palevioletred;
+    margin-top: 50px;
+    width: 450px;
+}
+
  .imagen-main {
     display:inline 
+
+    
     
  }
 
+
  .navegacion{
-    width: 400px;
+    width: 420px;
+    margin-left: 5px;
+    display:flex;
     
 } 
 
@@ -296,7 +309,16 @@ margin: 20px;}
 }
 .aside > p {
     margin: 75px;
+
 } 
+.aside {
+    text-align: center;
+   margin-top: 50px;
+    width: 450px;
+    height: 700px;
+   color: palevioletred
+
+}
 
 }
 
@@ -304,6 +326,13 @@ margin: 20px;}
 @media only screen and (max-width: 475px) {
 .navegacion2 {
     width: 400px;
+
+}
+.navegacion {
+    width: 430px;
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
 
 }
 }
