@@ -5,7 +5,7 @@
     box-sizing:border-box;
 }
 body{ 
-   background-color: black;
+   background-color:black
 }
 .navegacion{
     width: 1000px;
@@ -13,12 +13,12 @@ body{
     background-color: palevioletred;
 }
 .navegacion2{
-    background-color: black;
     width: 1000px;
     margin: 30px auto;
+    background-color: black;
 }
 .navegacion ul{
-            list-style:none;
+    list-style:none;
 }
 .navegacion2{
     list-style: none;
@@ -26,9 +26,9 @@ body{
 .menu > li{
     position: relative;
     display: inline-block;
+    padding: 13px 0;
 }
 .menu > li > a{
-    display: block;
     padding: 15px 20px;
     color: black;
     font-family: 'Open sans';
@@ -42,40 +42,56 @@ body{
     background-color: white;
 }
 .menu2 > li > a{
-    display: block;
     padding:15px 20px;
-    color: palevioletred;
+    color:palevioletred;
     font-family: 'Open sans';
     text-decoration: none;
+    
 }
 .menu2 > li img{
     width: 1rem;
 }
 .menu2 > li{
-    position: relative;
     display: inline-block;
+    padding: 13px 0;
 }
 
 .menu > li img {
     width: 1rem;
 }
+
 .body2{
     background-color: palevioletred;
+    display: flex;
+   flex-direction:column;
+    align-items:center;
 }
 .body3{
     background-color: palevioletred;
+    display: flex;
+   flex-direction:column;
+    align-items:center;
 }
+
+.card-body{
+    text-align:center
+
+}
+
 .body4{
     background-color: palevioletred;
+    display: flex;
+flex-direction:column;
+align-items:center;
+
+
 }
 .imagen{
     margin-left: 0%;
     margin-right: 50px;
 
 }
-.contenedor{
-    display: flex;
-}
+
  .infobox{
     background-color:transparent;color:black;background-color: white
  }
@@ -109,10 +125,11 @@ body{
 }
 .fecha{
     padding: 50px;
+    font-size: medium;
 }
 footer {
     position: fixed;
-bottom: 0;
+bottom:0;
 }
 
 article {
@@ -172,6 +189,9 @@ h2{
     background-attachment: fixed;
     margin:0%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction:column;
+     align-items:center;
 
 }
 .form{
@@ -233,6 +253,10 @@ footer {
     position: relative;
     bottom: 0;
 }
+.historia{
+    text-align: center;
+    font-size:large;
+}
 .container {  display: grid;
     grid-template-columns: 1.5fr 1.5fr 1fr;
     grid-template-rows: 0.5fr 1fr  1fr;
@@ -292,17 +316,7 @@ display: inline-block;}
  .imagen-main {
     display:inline 
 
-    
-    
  }
-
-
- .navegacion{
-    width: 420px;
-    margin-left: 5px;
-    display:flex;
-    
-} 
 
 .born-pink {
     margin: 20px
@@ -320,6 +334,7 @@ display: inline-block;}
 
 }
 
+
 }
 
 
@@ -328,7 +343,7 @@ display: inline-block;}
     width: 400px;
 
 }
-.navegacion {
+.navegacion{
     width: 430px;
     display: flex;
     margin: 30px auto;
