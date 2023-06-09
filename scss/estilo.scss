@@ -1,0 +1,206 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+}
+@import "integrantes";
+@import "merch";
+@import "tour";
+@import "contacto";
+
+/*estilos del index*/
+body{ 
+    background-color:black
+ }
+ .container {  display: grid;
+     grid-template-columns: 1.5fr 1.5fr 1fr;
+     grid-template-rows: 0.5fr 1fr  1fr;
+     gap: 1.6em;
+     grid-auto-flow: row;
+     grid-template-areas:
+       "header header header"
+       "main main aside"
+       "carousel carousel carousel"
+   }
+ .header{
+     grid-area: header;
+     margin: 20px;
+     justify-content: center;
+     display: inline-block;
+     .navegacion{
+         width: 1000px;
+         margin: 30px auto;
+         background-color: palevioletred;
+         ul{
+              list-style:none;
+             li{
+                 position: relative;
+                 display: inline-block;
+                 padding: 13px 0;
+                 a{
+                    padding: 15px 20px;
+                    color: black;
+                    font-family: 'Open sans';
+                    text-decoration: none;
+                    &:hover{
+                      background-color: white;
+                     }
+                        img{
+                            width: 1rem;
+                     
+                         }
+                 }
+             }
+         }   
+     }  
+ }   
+ 
+ .main{
+     grid-area: main;
+     padding: 20px;
+     border: 1px solid white;
+     .article{
+         background-color: palevioletred; 
+         color: black;
+         padding: 40px;
+         .historia{
+            text-align: center;
+            font-size:large;
+             .imagen-main{
+                 padding: 20px;
+                 justify-content: space-between;
+             }
+         }
+     }
+ }  
+ 
+ .aside {
+     grid-area: aside; 
+     padding: 50px;
+     border: 1px solid ;
+      color: white;
+      text-align: center;
+    .born-pink{
+         margin: 20px;
+        &:hover{
+           height: 500px;
+           width: 400px;
+           p{
+              margin: 50px;
+         
+            }
+
+        }
+    }
+ }
+  
+ .carousel { grid-area: carousel; 
+     .born{
+        width: 100%;
+        height: auto;
+     }
+ }
+ .footer {
+     position: relative;
+     bottom: 0;
+ }
+ /*media queries del index*/
+ @media only screen and (max-width: 475px){
+     .container {  
+         grid-template-columns: auto;
+         grid-template-areas:
+           "header"
+            "main"
+            "aside"
+            "carousel"
+     } 
+     .header{
+      grid-area: header;
+      justify-content: center;
+      display: inline-block;
+         .navegacion{
+           width: 400px;
+           display: flex;
+           margin: 50px auto;
+           justify-content: center;
+            ul{
+               list-style: none;
+                li{
+                   padding: 5px 0;
+                    a{
+                      padding: 2px auto;
+                       justify-content: center;
+                     }
+                 }
+             }
+  
+         }
+               
+     }
+    
+     .main{
+      border: 1px solid palevioletred;
+       margin-top: 10px;
+       width: 450px;
+         .article{
+            background-color:black; 
+            color: white;
+            padding: 5px;
+             .historia{
+               text-align: center;
+               font-size:large;
+                 .imagen-main{
+                     align-items: center;
+                  }
+             }
+         }
+             
+     }
+ 
+     .aside {
+         border: 1px solid palevioletred;
+         margin-top: 80px;
+         width: 450px;
+        .born-pink{
+             margin: 2px;
+             padding: 2px;
+             align-items: center;
+             p{
+                 margin-top: 0;
+                 margin-bottom: 1rem;
+                 height: 50px;
+             }
+         }
+     }
+ }
+/*media queries de las demas paginas*/  
+@media only screen and (max-width: 475px){
+    .header{
+      grid-area: header;
+      justify-content: center;
+      display: inline-block;
+       .navegacion2{
+          width: 400px;
+          display: flex;
+          margin: 50px auto;
+          justify-content: center;
+            ul{
+              list-style: none;
+              li{
+                 padding: 5px 0;
+                   a{
+                      padding: 2px auto;
+                      justify-content: center;
+                    }
+                }
+            }
+    
+        }
+                 
+    }
+
+}
+       
+    
+ 
