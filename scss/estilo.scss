@@ -21,7 +21,6 @@ body{
      grid-template-areas:
        "header header header"
        "main main aside"
-       "carousel carousel carousel"
    }
  .header{
      grid-area: header;
@@ -94,13 +93,16 @@ body{
         }
     }
  }
-  
- .carousel { grid-area: carousel; 
-     .born{
-        width: 100%;
-        height: auto;
-     }
- }
+.contenedor{
+    text-align: center;
+    padding-bottom: 500px;
+    .video{
+        display: flex;
+        margin: 50px;
+
+    }
+}
+
  .footer {
      position: relative;
      bottom: 0;
@@ -113,7 +115,6 @@ body{
            "header"
             "main"
             "aside"
-            "carousel"
      } 
      .header{
       grid-area: header;
@@ -174,6 +175,7 @@ body{
          }
      }
  }
+
 /*media queries de las demas paginas*/  
 @media only screen and (max-width: 475px){
     .header{
