@@ -15,7 +15,6 @@ body{
  }
  .container {  display: grid;
      grid-template-columns: 1.5fr 1.5fr 1fr;
-     grid-template-rows: 0.5fr 1fr  1fr;
      gap: 1.6em;
      grid-auto-flow: row;
      grid-template-areas:
@@ -95,7 +94,12 @@ body{
  }
 .contenedor{
     text-align: center;
-    padding-bottom: 500px;
+    h2{
+        color: white;
+        padding: 10px auto;
+        margin: 10px;
+        font-size:x-large
+    }
     .video{
         display: flex;
         margin: 50px;
@@ -174,6 +178,15 @@ body{
              }
          }
      }
+ }
+ .contenedor{
+    text-align: center;
+    h2{
+     text-align: center;
+    }
+ }
+ .videos{
+    align-items: center;
  }
 
 /*media queries de las demas paginas*/  
