@@ -58,19 +58,23 @@ body{
      grid-area: main;
      padding: 20px;
      border: 1px solid white;
-     .article{
-         background-color: palevioletred; 
-         color: black;
-         padding: 40px;
-         .historia{
-            text-align: center;
-            font-size:large;
-             .imagen-main{
-                 padding: 20px;
-                 justify-content: space-between;
-             }
-         }
-     }
+       .article{
+           background-color: palevioletred; 
+           color: black;
+           padding: 40px;
+         font-family: 'Open sans';
+           .historia{
+              text-align: center;
+              font-size:large;
+              font-family: 'Open sans';
+            }
+            .imagen-main img{
+                padding: 20px;
+                justify-content:space-between
+            }
+      
+        }
+
  }  
  
  .aside {
@@ -98,7 +102,8 @@ body{
         color: white;
         padding: 10px auto;
         margin: 10px;
-        font-size:x-large
+        font-size:x-large;
+        font-family: 'Open sans';
     }
     .video{
         display: flex;
@@ -110,6 +115,7 @@ body{
  .footer {
      position: relative;
      bottom: 0;
+     font-family: 'Open sans';
  }
  /*media queries del index*/
  @media only screen and (max-width: 475px){
@@ -171,11 +177,14 @@ body{
              margin: 2px;
              padding: 2px;
              align-items: center;
-             p{
-                 margin-top: 0;
-                 margin-bottom: 1rem;
-                 height: 50px;
-             }
+               p{
+                  margin-top: 0;
+                  margin-bottom: 1rem;
+                  height: 50px;
+                  justify-content: space-between;
+                  
+            
+                }
          }
      }
  }
@@ -183,6 +192,7 @@ body{
     text-align: center;
     h2{
      text-align: center;
+     
     }
  }
  .videos{
