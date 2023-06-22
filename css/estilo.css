@@ -308,9 +308,9 @@ body {
     margin: 10px;
     font-size: x-large;
     font-family: 'Open sans'; }
-  .contenedor .video {
-    display: flex;
-    margin: 50px; }
+  .contenedor .videos {
+    display: block;
+    margin: 10px; }
 
 .footer {
   position: relative;
